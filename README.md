@@ -117,7 +117,8 @@ I have built a `pipeline()` function that combines all the work so far. This fun
 ![pipeline test][image15]
 ![pipeline test][image16]
 
-I confirmed that it works well and applied it to video. This completed video can be found [here](./project_video_output.mp4).
+## Result video
+<img src="test_video_output.gif" style="width:400px;height:230px;">
 
 ## Discussion
 This project provides a framework for vehicle detection. The framework includes feature extraction, training classifier and sliding window detection. The normalized combination of the three features are used to train the SVM classifier for vehicle detection. Although the classifier can archive 99% during training, it still can cause false positives in the video. After observation, the real vehicle can cause more than three detections. Therefore, the threshold of three detections is applied to remove the widows with less than three detections.
